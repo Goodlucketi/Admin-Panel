@@ -24,10 +24,10 @@ const Login = () => {
                     <div className="rememberMe flex items-center justify-between my-2">
                         <div className="flex gap-2">
                             <input type="checkbox" name="rememberMe" d="rememberMe" value="checked" />
-                            <p className="text-sm font-bold">Remember Me</p>
+                            <p className="text-xs font-bold">Remember Me</p>
                         </div>
                         <div>
-                            <p className="text-sm ">Forgot Password?</p>
+                            <p className="text-xs text-[#7152F3] ">Forgot Password?</p>
                         </div>
                         
                     </div>

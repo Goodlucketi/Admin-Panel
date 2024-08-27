@@ -41,12 +41,9 @@ const Overview = () => {
         responsive: true,
         plugins: {
           legend: {
-            position: 'bottom',
+            display:false,
           },
-          title: {
-            display: true,
-            text: 'Attendance Overview',
-          },
+          
         },
         scales: {
           y: {
@@ -61,16 +58,29 @@ const Overview = () => {
                 callback: function(value){
                     return value + '%'
                 }
+            },
+            grid: {
+              display:false,
             }
           },
           x: {
             stacked: true,
-           
-          }
+            grid: {
+              display:false,
+            }
+          },
+          
         },
       };
     
-      return <Bar data={data} options={options} />;
+      return (
+        <main className='my-5 p-2'>
+          <h2 className="font-bold text-lg my-2">Attendance Overview</h2>
+          <Bar data={data} options={options} />;
+        </main>
+      
+
+      )
     };
  
 export default Overview;
